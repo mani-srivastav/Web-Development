@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>video4</title>
+</head>
+
+<body>
+    <!-- this is the image tag in this we provide the link in the "src" option
+        and in the "alt" option we write about the image if by any chance the 
+        image is not loaded then the string given in the "alt" option will be
+        displayed -->
+    <img src="image.png" alt="image">
+
+    <!-- now we have 2 attributes in the img tag 
+        height and widht -->
+    <!-- if we write any one of these the other will set automatically -->
+    <img height="150" width="150" src="image.png" alt="image">
+
+    <!-- tables in html -->
+    <table border="1"> <!-- if we have to give the border in the table then we can use border in <table> -->
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td>mani</td>
+            <td>20</td>
+            <td>Lucknow</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- now we have 2 attributes in tables 1.colspan 2.rowspan -->
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td rowspan="2">mani</td>
+            <td>20</td>
+            <td>lucknow</td>
+        </tr>
+        <tr>
+            <td colspan="2">shivam</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- now we have header and footer in tables we can access
+          them with the help of <thead></thead> and <tfoot></tfoot> tag -->
+    <table border="1">
+        <caption>table</caption> <!-- this tag is used to give caption -->
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>city</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mani</td>
+                <td>20</td>
+                <td>lucknow</td>
+            </tr>
+            <tr>
+                <td>shivam</td>
+                <td>25</td>
+                <td>lucknow</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">this is footer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- list in html: there are three types
+      1. ordered list 
+      2. unordered list
+      3. definition list  -->
+
+    <ol> <!--ordered list-->
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+    </ol>
+
+    <!-- if we want to change the "type" of orders then we can 
+      use the type attribute in the <ol> -->
+
+    <ol type="A"> <!-- for uppercase letters -->
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+    </ol>
+    <ol type="a"> <!--for lowercase letters-->
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+    </ol>
+    <ol type="i"> <!--for lowercase roman numbers-->
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+    </ol>
+    <ol type="I"> <!--for uppercase roman numbers-->
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+    </ol>
+
+    <!-- expect type attribute we have start attribute also 
+      with the help of this we can start the counting from the 
+      specific number or letter -->
+
+    <ol start="3">
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+    </ol>
+
+    <ul> <!--unordered list-->
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+    </ul>
+
+    <!-- in unordered list we also have "type" attributes -->
+     <ul type="square">
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+     </ul>
+     <ul type="circle">
+        <li>mani</li>
+        <li>shivam</li>
+        <li>prakhar</li>
+     </ul>
+
+    <!--definition list-->
+    
+     <h1>HTML Definition List</h1>
+     <dl>  <!--it is the container for the list-->
+       <dt>HTML</dt>  <!--defines the terms that you want to explain.-->
+       <dd>HyperText Markup Language: The standard language for creating web pages.</dd>
+       <!-- <dd>contains the definitions or explanations for the terms.-->
+       <dt>CSS</dt>
+       <dd>Cascading Style Sheets: A stylesheet language used for describing the look and formatting of a document written in HTML.</dd>
+   
+       <dt>JavaScript</dt>
+       <dd>A programming language commonly used in web development to add interactive features.</dd>
+     </dl>
+</body>
+</html>
