@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+</head>
+
+<body>
+    <form action="post"> <!--in form we have an attribute called "action"
+        in action we have two things 1.get  2.post 
+        in "post" we provide the huge amount of data to the server 
+        in "get" we give small data to the server, generally we use post most 
+        of the time-->
+        <div>
+            <label for="username">Enter your details</label>
+            <!-- now we have to give inputs for which we use the "input" tag and with 
+            input tag we use the "label" tag, and in this we provide whatever written 
+            in the "id" attribute of input tag -->
+
+            <!--agar "label" me for use kiya hai to "input" me uski id likhna hi hai-->
+            <input type="text" name="username" id="username" placeholder="Enter the username">
+            <!-- in input tag we have many attribute- 
+            1. "type"-it describes what type of input is taken
+            2. "name"-the name attribute is used to identify the input field when submitting form data
+            3. "id"-it is used to provide the unique identity
+            4. "placeholder"-it is used to display the mesaage in the block -->
+        </div> <br>
+
+        <div>
+            <!--Radio buttons are used when you want the user to select only one option from a set of choices-->
+            <form action="/submit" method="post">
+                <!--if we want to submit our form then we can use the "action" and the "method" attribute-->
+                <input type="radio" id="red" name="color" value="red">
+                <!-- we can write either in this way by providing id  -->
+                <label for="red">Red</label>
+                <!-- or we can write in this way  -->
+                <label>
+                    <input type="radio" name="color" value="blue"> Blue
+                    <!--the "value" attribute specifies the data that will be sent to the server 
+                  if that radio button is selected-->
+                </label>
+                <label>
+                    <input type="radio" name="color" value="green"> Green
+                </label>
+                <button type="submit">Submit</button> <!--with the help of this we can provide
+                the submit button-->
+            </form>
+        </div> <br>
+
+        <div>
+            <!-- Checkboxes allow the user to select multiple options from a set. -->
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div> <br>
+
+        <div>
+            <!-- The textarea element is used when you need multiline text input from the user -->
+            <textarea name="comment" rows="4" cols="50">Enter here..</textarea>
+        </div> <br>
+
+        <div>
+            <!-- The select element creates a dropdown menu for the user -->
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
