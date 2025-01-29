@@ -1,0 +1,9 @@
+ #firstdiv{  /*we can access id with the help of "#" in the css */
+color: red;
+}
+.red{  /*we can access the class with the help of "." in the css */
+    background-color: pink;
+}
+.pink{
+    background-color: yellow;
+}
